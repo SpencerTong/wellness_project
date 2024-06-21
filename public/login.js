@@ -13,9 +13,13 @@ import {
   where,
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js";
+import dotenv from "dotenv";
+
+dotenv.config();
+const apiKey = process.env.FIREBASE_API_KEY;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDblp_IHYE-40ArPW1LpCF--sYvhmESZ1c",
+  apiKey: apiKey,
   authDomain: "wellness-checklist-project.firebaseapp.com",
   databaseURL: "https://wellness-checklist-project-default-rtdb.firebaseio.com",
   projectId: "wellness-checklist-project",
